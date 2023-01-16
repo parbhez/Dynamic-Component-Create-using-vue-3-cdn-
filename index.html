@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+    <title>Hello, world!</title>
+</head>
+
+<body>
+
+    <div class="container" id="app">
+        <div class="col-md-12">
+            <div class="row">
+                <navbar-component :msgtext="msg"></navbar-component>
+                <table-component :countries="countries"></table-component>
+                <form-component :student="msg"></form-component>
+            </div>
+        </div>
+
+        <breadcam-component :breadcam="breadcam"></breadcam-component>
+    </div>
+    </div>
+
+    <script src="main.js"></script>
+    <script src="components/table.js"></script>
+    <script src="components/form.js"></script>
+
+    <script>
+        app.mount('#app');
+    </script>
+
+</body>
+
+</html>
